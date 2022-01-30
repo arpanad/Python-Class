@@ -1,0 +1,86 @@
+#Data type and conversions
+
+value1 = 25
+print("The data type of value1", type(value1))
+
+#integer to float
+value1_a = float(value1)
+print(value1_a)
+print(type(value1_a))
+
+#integer to string
+value1_b = str(value1)
+print(value1_b)
+print(type(value1_b))
+
+#integer to boolean
+value1_c = bool(value1)
+print(value1_c)
+print(type(value1_c))
+
+value2 = 10.5
+print("The data type of value2", type(value2))
+
+#float to integer
+value2_a = int(value2)
+print(value2_a)
+print(type(value2_a))
+
+#float to boolean
+value2_b = bool(value2)
+print(value2_b)
+print(type(value2_b))
+
+#float to string
+value2_c = str(value2)
+print(value2_c)
+print(type(value2_c))
+
+value3 = True
+print("The data type of value3", type(value3))
+
+#boolean to integer
+value3_a = int(value3)
+print(value3_a)
+print(type(value3_a))
+
+#boolean to float
+value3_b = float(value3)
+print(value3_b)
+print(type(value3_b))
+
+#boolean to string
+value3_c = str(value3)
+print(value3_c)
+print(type(value3_c))
+
+value4 = "Hello"
+print("The data type of value4", type(value4))
+
+#String cannot be converted from one data type to the other
+#Error is not thrown on converting a string to string
+
+
+Output:
+The data type of value1 <class 'int'>
+25.0
+<class 'float'>
+25
+<class 'str'>
+True
+<class 'bool'>
+The data type of value2 <class 'float'>
+10
+<class 'int'>
+True
+<class 'bool'>
+10.5
+<class 'str'>
+The data type of value3 <class 'bool'>
+1
+<class 'int'>
+1.0
+<class 'float'>
+True
+<class 'str'>
+The data type of value4 <class 'str'>
