@@ -62,6 +62,7 @@ print("The data type of value4", type(value4))
 
 #String cannot be converted from one data type to the other
 #Error is not thrown on converting a string to string
+#String is a generic data type
 
 
 Output:
