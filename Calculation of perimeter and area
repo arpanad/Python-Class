@@ -1,0 +1,35 @@
+Code:
+-----
+pi = 3.14
+
+#Perimeter of circle whose radius is 10.2
+radius1 = 10.2
+perimeter1 = 2*pi*radius1
+print(f"Perimeter of circle with radius {radius1} is {perimeter1}")
+
+#Area of circle whose radius is taken as an input from user
+radius2 = float(input("Enter the radius of the circle: "))
+area = pi*(radius2**2)
+print("Area of circle with radius {} is {}".format(radius2, area))
+
+#Perimeter of circle whose radius is taken as an input from user
+radius3 = float(input("Enter the radius of the circle: "))
+perimeter2 = 2*pi*radius2
+print("Perimeter of circle with radius {} is {}".format(radius3, perimeter2))
+
+#Area of cone whose radius and hieight is taken as an input from user
+cone_radius = int(input("Enter the radius of cone: "))
+height = int(input("Enter the height of cone: "))
+cone_area = 0.33*pi*(cone_radius**2)*height
+print("Area of cone with radius {1} and height {0} is {2}".format(height, cone_radius, cone_area))
+
+Output:
+-------
+Perimeter of circle with radius 10.2 is 64.056
+Enter the radius of the circle: 5.2
+Area of circle with radius 5.2 is 84.9056
+Enter the radius of the circle: 4.2
+Perimeter of circle with radius 4.2 is 32.656000000000006
+Enter the radius of cone: 3
+Enter the height of cone: 6
+Area of cone with radius 3 and height 6 is 55.954800000000006
