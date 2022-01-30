@@ -1,4 +1,4 @@
-#Data type and conversions
+#Data types and conversions
 
 value1 = 25
 print("The data type of value1", type(value1))
