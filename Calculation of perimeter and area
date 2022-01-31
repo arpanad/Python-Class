@@ -33,3 +33,20 @@ Perimeter of circle with radius 4.2 is 32.656000000000006
 Enter the radius of cone: 3
 Enter the height of cone: 6
 Area of cone with radius 3 and height 6 is 55.954800000000006
+
+Code:
+----
+length = float(input("Enter the length: "))
+breadth = float(input("Enter the breadth: "))
+height = float(input("Enter the height: "))
+
+area = (length * breadth) + (length * height)
+
+print("The Area of Geometry with length {} , breadth {} and height {} is {}".format(length, breadth, height, int(area)))
+
+Output:
+-------
+Enter the length: 2.2
+Enter the breadth: 4.2
+Enter the height: 6.2
+The Area of Geometry with length 2.2 , breadth 4.2 and height 6.2 is 22
