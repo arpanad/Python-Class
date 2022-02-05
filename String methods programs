@@ -1,4 +1,4 @@
-1. Program1:
+Program 1:
 #Get one string from user
 #identify the middle character of the string
 
@@ -12,7 +12,7 @@ Enter a string: executer
 The middle character of the string is  u
 
 
-Program2:
+Program 2:
 #input string1: ***python***
 #input string2: ***java*******
 #output - python, java
@@ -37,3 +37,28 @@ The entered first string is:  *****python*****
 String1 after removing the '*' characters:  python
 The entered second string is:  ***java*****
 String2 after removing the '*' characters:  java
+
+
+Program 3:
+#collect three strings from user  name<space>float
+#string1: "ravi 10.30"  
+#string2: "meghala 12.19"
+#string3: "Gokul 20.20"
+#10.30 + 12.19 + 20.20 ===> output ===> add it 42.69
+
+string1 = input("Enter the 1st string in the form of 'name float': ")
+string2 = input("Enter the 2nd string in the form of 'name float': ")
+string3 = input("Enter the 3rd string in the form of 'name float': ")
+
+string1_list = string1.split()
+string2_list = string2.split()
+string3_list = string3.split()
+
+total = float(string1_list[1]) + float(string2_list[1]) + float(string3_list[1])
+print("The addition of the float vales in string1, string2 and string3 is : ", total)
+
+Output:
+Enter the 1st string in the form of 'name float': Ravi 20.45
+Enter the 2nd string in the form of 'name float': Amith 45.65
+Enter the 3rd string in the form of 'name float': Dhruv 12.65
+The addition of the float vales in string1, string2 and string3 is :  78.75
