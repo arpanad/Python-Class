@@ -129,3 +129,16 @@ print("The output string is: ", output_str)
 Output:
 Enter a string : mathematics
 The output string is:  m9s
+
+
+Program 7:
+#Write a Hello, World! program
+
+string = "Hello, World!"
+print(string)
+
+Output:
+Hello, World!
+
+
+Program 8:
