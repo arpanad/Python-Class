@@ -1,0 +1,12 @@
+#Program1
+#Get one string from user
+#identify the middle character of the string
+
+word = input("Enter a string: ")
+word_len = len(word)
+middle_char = word[int(word_len/2)]
+print("The middle character of the string is ", middle_char)
+
+Output:
+Enter a string: executer
+The middle character of the string is  u
