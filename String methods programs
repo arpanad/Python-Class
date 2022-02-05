@@ -1,4 +1,4 @@
-#Program1
+1. Program1:
 #Get one string from user
 #identify the middle character of the string
 
@@ -10,3 +10,30 @@ print("The middle character of the string is ", middle_char)
 Output:
 Enter a string: executer
 The middle character of the string is  u
+
+
+Program2:
+#input string1: ***python***
+#input string2: ***java*******
+#output - python, java
+
+string1 = input("Enter the first string: ")
+string2 = input("Entrer the second string: ")
+
+string1_a = string1.strip("*")
+print("The entered first string is: ", string1)
+print("String1 after removing the '*' characters: ", string1_a)
+
+string2_a = string2.lstrip("*")
+string2_b = string2_a.rstrip("*")
+
+print("The entered second string is: ", string2)
+print("String2 after removing the '*' characters: ", string2_b)
+
+Output:
+Enter the first string: *****python*****
+Entrer the second string: ***java*****
+The entered first string is:  *****python*****
+String1 after removing the '*' characters:  python
+The entered second string is:  ***java*****
+String2 after removing the '*' characters:  java
