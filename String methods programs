@@ -84,3 +84,28 @@ Output:
 Enter the 1st string : python
 Enter the 2nd string : java
 The final string is : jythonpava64hv
+
+
+Program 5:
+#Collect two strings from user
+#string1: wikipedia
+#string2: typescript
+#output: p  +  c   ===> ascii value of p + ascii value of c  ====>  198
+
+str1 = input("Enter the 1st string : ")
+str2 = input("Enter the 2nd string : ")
+
+str1_len = len(str1)
+str2_len = len(str2)
+
+str1_char_asci = ord(str1[int(str1_len/2)])
+str2_char_asci = ord(str2[int(str2_len/2)])
+
+asci_total = str1_char_asci + str1_char_asci
+
+print("The addition of asci value of middle char of both the strings is: ", asci_total)
+
+Output:
+Enter the 1st string : interpreter
+Enter the 2nd string : compiler
+The addition of asci value of middle char of both the strings is:  224
