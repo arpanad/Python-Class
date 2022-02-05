@@ -62,3 +62,25 @@ Enter the 1st string in the form of 'name float': Ravi 20.45
 Enter the 2nd string in the form of 'name float': Amith 45.65
 Enter the 3rd string in the form of 'name float': Dhruv 12.65
 The addition of the float vales in string1, string2 and string3 is :  78.75
+
+
+Program 4:
+#collect two strings from user
+#string1: python
+#String2: java
+#output ===> jythonpava64hv
+
+str1 = input("Enter the 1st string : ")
+str2 = input("Enter the 2nd string : ")
+
+str1_len = len(str1)
+str2_len = len(str2)
+
+final_str = str2[0] + str1[1:] + str1[0] + str2[1:] + str(str1_len) + str(str2_len)  + str1[int(str1_len/2)] + str2[int(str2_len/2)]
+
+print("The final string is :", final_str)
+
+Output:
+Enter the 1st string : python
+Enter the 2nd string : java
+The final string is : jythonpava64hv
