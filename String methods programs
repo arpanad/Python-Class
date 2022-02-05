@@ -142,3 +142,12 @@ Hello, World!
 
 
 Program 8:
+#SawpCase
+
+string = input("Enter the string to swap: ")
+
+print(string.swapcase())
+
+Output:
+Enter the string to swap: To test the swapCase funtion
+tO TEST THE SWAPcASE FUNTION
