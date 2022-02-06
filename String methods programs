@@ -175,10 +175,30 @@ Program 10:
 #Output - abrakadabra
 
 string = "abracadabra"
-final_string = string[:4] + "k" + string[6:]
+final_string = string[:4] + "k" + string[5:]
 print("The muated string is: ", final_string)
 
 Output:
-The muated string is:  abrakdabra
+The muated string is:  abrakadabra
 
 
+Program 11:
+#Arithmetic Operators
+#Take 2 integers as an input
+#Add the 2 numbers
+#Subtract the 2 numbers
+#Multiply the 2 numbers
+
+int1 = int(input("Enter the first integer: "))
+int2 = int(input("Enter the second integer: "))
+
+print(int1+int2)
+print(int1-int2)
+print(int1*int2)
+
+Output:
+Enter the first integer: 4
+Enter the second integer: 8
+12
+-4
+32
