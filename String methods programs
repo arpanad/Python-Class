@@ -151,3 +151,21 @@ print(string.swapcase())
 Output:
 Enter the string to swap: To test the swapCase funtion
 tO TEST THE SWAPcASE FUNTION
+
+
+Program 9:
+#Take input of first name and last name 
+#Output - 
+
+first_name = input("Enter your first name: ")
+last_name = input("Enter your last name: ")
+
+print("Hello {} {} You just delved into python.".format(first_name, last_name))
+
+Output:
+Enter your first name: Arpana
+Enter your last name: Dandin
+Hello Arpana Dandin You just delved into python.
+
+
+Program 10:
