@@ -154,6 +154,7 @@ tO TEST THE SWAPcASE FUNTION
 
 
 Program 9:
+#Whats your name
 #Take input of first name and last name 
 #Output - 
 
@@ -169,3 +170,15 @@ Hello Arpana Dandin You just delved into python.
 
 
 Program 10:
+#Mutation
+#Input - abracadabra
+#Output - abrakadabra
+
+string = "abracadabra"
+final_string = string[:4] + "k" + string[6:]
+print("The muated string is: ", final_string)
+
+Output:
+The muated string is:  abrakdabra
+
+
