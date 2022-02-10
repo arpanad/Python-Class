@@ -208,3 +208,21 @@ Enter the second integer: 8
 12
 -4
 32
+
+
+#Program 12
+#Python Division
+
+from __future__ import division
+
+if __name__ == '__main__':
+    a = int(raw_input())
+    b = int(raw_input())
+    print(a//b)
+    print(a/b)
+
+Output:
+4
+3
+1
+1.33333333333
