@@ -195,12 +195,12 @@ Program 11:
 #Subtract the 2 numbers
 #Multiply the 2 numbers
 
-int1 = int(input("Enter the first integer: "))
-int2 = int(input("Enter the second integer: "))
-
-print(int1+int2)
-print(int1-int2)
-print(int1*int2)
+if __name__ == '__main__':
+    int1 = int(input("Enter the first integer: "))
+    int2 = int(input("Enter the second integer: "))
+    print(int1+int2)
+    print(int1-int2)
+    print(int1*int2)
 
 Output:
 Enter the first integer: 4
