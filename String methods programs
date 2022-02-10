@@ -133,9 +133,8 @@ The output string is:  m9s
 
 Program 7:
 #Write a Hello, World! program
-
-string = "Hello, World!"
-print(string)
+if __name__ == '__main__':
+    print("Hello, World!")
 
 Output:
 Hello, World!
