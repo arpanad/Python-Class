@@ -196,18 +196,18 @@ Program 11:
 #Multiply the 2 numbers
 
 if __name__ == '__main__':
-    int1 = int(input("Enter the first integer: "))
-    int2 = int(input("Enter the second integer: "))
-    print(int1+int2)
-    print(int1-int2)
-    print(int1*int2)
+    a = int(input())
+    b = int(input())
+    print(a+b)
+    print(a-b)
+    print(a*b)
 
 Output:
-Enter the first integer: 4
-Enter the second integer: 8
-12
--4
-32
+3
+2
+5
+1
+6
 
 
 #Program 12
