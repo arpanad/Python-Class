@@ -143,13 +143,16 @@ Hello, World!
 
 Program 8:
 #SawpCase
+def swap_case(string):
+    return string.swapcase()
 
-string = input("Enter the string to swap: ")
-
-print(string.swapcase())
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
 
 Output:
-Enter the string to swap: To test the swapCase funtion
+To test the swapCase funtion
 tO TEST THE SWAPcASE FUNTION
 
 
