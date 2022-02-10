@@ -1,1 +1,15 @@
 Program 1:
+#Create an empty list 2 ways
+
+list1 = []
+list2 = list()
+
+print(list1)
+print(type(list1))
+print(list2)
+print(type(list2))
+
+[]
+<class 'list'>
+[]
+<class 'list'>
