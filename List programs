@@ -1,4 +1,3 @@
-Program 1:
 #Create an empty list 2 ways
 
 list1 = []
@@ -9,7 +8,42 @@ print(type(list1))
 print(list2)
 print(type(list2))
 
+#Concatenate with [5,6,7,8]
+
+list1 = list1 + [5,6,7,8]
+print(list1)
+
+#add 8,9,1,5,6,7,8,1 elements to that list
+
+list1.extend([8,9,1,5,6,7,8,1])
+print(list1)
+
+#Find frequency of 8 (count)
+print(list1.count(8))
+
+#find the mean of the list
+mean = sum(list1)/len(list1)
+print(mean)
+
+#find sum (List) + min + Max
+print(sum(list1) + min(list1) + max(list1))
+
+#Find median of the list
+print(list1[int(len(list1)/2)])
+
+#remove duplicates from list and give output in the format of tuple
+print(tuple(set(list1)))
+
+
+Output:
 []
 <class 'list'>
 []
 <class 'list'>
+[5, 6, 7, 8]
+[5, 6, 7, 8, 8, 9, 1, 5, 6, 7, 8, 1]
+3
+5.916666666666667
+81
+1
+(1, 5, 6, 7, 8, 9)
