@@ -155,18 +155,17 @@ tO TEST THE SWAPcASE FUNTION
 
 Program 9:
 #Whats your name
-#Take input of first name and last name 
-#Output - 
 
-first_name = input("Enter your first name: ")
-last_name = input("Enter your last name: ")
-
-print("Hello {} {} You just delved into python.".format(first_name, last_name))
+def print_full_name(first, last):
+    print("Hello {} {}! You just delved into python.".format(first,last))
+    
+if __name__ == '__main__':
+    first_name = input()
+    last_name = input()
+    print_full_name(first_name, last_name)
 
 Output:
-Enter your first name: Arpana
-Enter your last name: Dandin
-Hello Arpana Dandin You just delved into python.
+Hello Ross Taylor! You just delved into python.
 
 
 Program 10:
