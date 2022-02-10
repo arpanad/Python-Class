@@ -173,15 +173,20 @@ Hello Ross Taylor! You just delved into python.
 
 Program 10:
 #Mutation
-#Input - abracadabra
-#Output - abrakadabra
 
-string = "abracadabra"
-final_string = string[:4] + "k" + string[5:]
-print("The muated string is: ", final_string)
+def mutate_string(string, position, character):   
+    return string[:position]+ character + string[position+1:]
+
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
 
 Output:
-The muated string is:  abrakadabra
+abracadabra
+5 k
+abrackdabra
 
 
 Program 11:
