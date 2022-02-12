@@ -3,8 +3,7 @@ Program 1:
 #identify the middle character of the string
 
 word = input("Enter a string: ")
-word_len = len(word)
-middle_char = word[int(word_len/2)]
+middle_char = word[int(len(word)/2)]
 print("The middle character of the string is ", middle_char)
 
 Output:
@@ -73,10 +72,7 @@ Program 4:
 str1 = input("Enter the 1st string : ")
 str2 = input("Enter the 2nd string : ")
 
-str1_len = len(str1)
-str2_len = len(str2)
-
-final_str = str2[0] + str1[1:] + str1[0] + str2[1:] + str(str1_len) + str(str2_len)  + str1[int(str1_len/2)] + str2[int(str2_len/2)]
+final_str = str2[0] + str1[1:] + str1[0] + str2[1:] + str(len(str1)) + str(len(str2))  + str1[int(len(str1)/2)] + str2[int(len(str2)/2)]
 
 print("The final string is :", final_str)
 
@@ -95,11 +91,8 @@ Program 5:
 str1 = input("Enter the 1st string : ")
 str2 = input("Enter the 2nd string : ")
 
-str1_len = len(str1)
-str2_len = len(str2)
-
-str1_char_asci = ord(str1[int(str1_len/2)])
-str2_char_asci = ord(str2[int(str2_len/2)])
+str1_char_asci = ord(str1[int(len(str1)/2)])
+str2_char_asci = ord(str2[int(len(str2)/2)])
 
 asci_total = str1_char_asci + str1_char_asci
 
