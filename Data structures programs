@@ -286,3 +286,66 @@ Output:
 222
 7777
 [33, 44]
+
+
+Task 6:
+#Extract py  ello  en  zoo  Bot from the below :
+#a = {1: [1,2,3,"python"], 2:{10:"hello",20:"welcome",40: "science"}, 99: {3,4,5,6}, 40:{1:"zoology", 2:"Botany"}}
+
+a = {1: [1,2,3,"python"], 2:{10:"hello",20:"welcome",40: "science"}, 99: {3,4,5,6}, 40:{1:"zoology", 2:"Botany"}}
+print(a[1][-1][0:2])
+print(a[2][10][1:]) 
+print(a[2][40][3:5])
+print(a[40][1][:3]) 
+print(a[40][2][:3]) 
+
+Output:
+py
+ello
+en
+zoo
+Bot
+
+Task 7:
+#Covert below two lists in to a dictionary
+#[1,2,3,4,5]
+#["python","cpp","c","java","php"]
+
+li1 = [1,2,3,4,5]
+li2 = ["python","cpp","c","java","php"]
+print(dict(zip(li1,li2)))
+
+Output:
+{1: 'python', 2: 'cpp', 3: 'c', 4: 'java', 5: 'php'}
+
+Task 8:
+#Convert below set in to a list
+#{5,4,3,6,2,7,1}
+
+set1 = {5,4,3,6,2,7,1}
+print(list(set1))
+
+Output:
+[1, 2, 3, 4, 5, 6, 7]
+
+
+Task 9:
+#Remove duplicates from below list
+#[5,4,3,6,2,7,1,2,3,4,1,2,3,4,5,6,5]
+
+li1 = [5,4,3,6,2,7,1,2,3,4,1,2,3,4,5,6,5]
+print(list(set(li1)))
+
+Output:
+[1, 2, 3, 4, 5, 6, 7]
+
+
+Task 10:
+#Convert below one to tuple
+#[5,4,3,6,2,7,1,2,3,4,1,2,3,4,5,6,5]
+
+li1 = [5,4,3,6,2,7,1,2,3,4,1,2,3,4,5,6,5]
+print(tuple(li1))
+
+Output:
+(5, 4, 3, 6, 2, 7, 1, 2, 3, 4, 1, 2, 3, 4, 5, 6, 5)
