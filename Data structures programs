@@ -135,3 +135,31 @@ After removing elemenet 0 from set1 : {1, 2, 3, 4, 5, 7, 9}
 After removing elemenet 0 from set2 : {4, 5, 6}
 Collection of both sets:  {1, 2, 3, 4, 5, 6, 7, 9}
 
+
+
+DICTIONARY:
+-----------
+#create a dictionary
+#{1:["english","maths","science"], 2:[10,20,30], 3:["bio-botany","bio-zoology","Algebra"]}
+dict1 = {1:["english","maths","science"], 2:[10,20,30], 3:["bio-botany","bio-zoology","Algebra"]}
+
+#Extract "bobtn" from above dictionary
+print(dict1[3][0][::2])
+
+#Extract "arbeg" from above dictionary
+print(dict1[3][-1][-1:1:-1])
+
+#print all keys in dictionary and convert it into tuple
+print(dict1.keys())
+print(tuple(dict1.keys()))
+
+#Find the average of all numbers available under key "2"
+print("Average : ", sum(dict1[2])/len(dict1[2]))
+
+
+Output:
+bobtn
+arbeg
+dict_keys([1, 2, 3])
+(1, 2, 3)
+Average :  20.0
