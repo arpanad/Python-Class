@@ -168,6 +168,9 @@ Average :  20.0
 
 NESTED DATA STRUCTURES:
 -----------------------
+
+Task 1:
+
 #Extract the below elements from the given data structure
 #Li1 = [2,3,4,5,[45,56,67,78,[111,222,333,[5555,3333,[10000,50000,"python","computer"],1111,7777,8888],444,555,666,777],89,23,34]]
 #5  56  222  50000  put  5555  7777  666  89  on  333  3333
@@ -200,3 +203,20 @@ put
 on
 333
 3333
+
+
+Task 2:
+
+a = [1,2,3,4,[100,101,102,"Computer_science"],200,203]
+
+#Extract
+#science
+#Computer
+
+print(a[4][-1][9:])
+print(a[4][-1][:8])
+
+Output:
+science
+Computer
+
