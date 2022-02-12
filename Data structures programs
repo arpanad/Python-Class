@@ -250,5 +250,39 @@ Output:
 
 
 Task 4:
+#Extract  ll  thon
+#Li1 = [2,3,"python","hello",4,5,0]  
+
+Li1 = [2,3,"python","hello",4,5,0]  
+
+print(Li1[3][2:-1])
+print(Li1[2][2:])
+
+Output:
+ll
+thon
 
 
+Task 5:
+#Pridict the output:
+
+Li1 = [1,2,3,4,5,[11,22,33,44,55,[111,222,333,444],6666,7777],7777]
+print(Li1[5][0])    # 11
+print(Li1[5][6])    # 6666
+print(Li1[5][-2])   # 6666
+print(Li1[5][7])    #7777
+print(Li1[6])   # 7777
+print(Li1[5][5][1]) # 222
+print(Li1[-2][-1])  # 7777
+print(Li1[-2][2:4]) # [33,44]
+
+
+Output:
+11
+6666
+6666
+7777
+7777
+222
+7777
+[33, 44]
