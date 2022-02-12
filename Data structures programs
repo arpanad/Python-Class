@@ -33,6 +33,13 @@ print(sum(list1) + min(list1) + max(list1))
 #Find median of the list
 print(list1[int(len(list1)/2)])
 
+
+Output:
+science
+Computer
+
+
+
 #remove duplicates from list and give output in the format of tuple
 print(tuple(set(list1)))
 
@@ -219,4 +226,29 @@ print(a[4][-1][:8])
 Output:
 science
 Computer
+
+
+Task 3:
+#Extract 666  201  102   999  777 from the below list
+#a = [1,2,3,4,[101,102,103,[201,202,[999]], 666, 777]]
+
+a = [1,2,3,4,[101,102,103,[201,202,[999]], 666, 777]]
+print(a[-1][-2])
+print(a[4][3][0])
+print(a[4][1])
+print(a[4][3][-1][0])
+print(a[-1][-1])
+
+
+Output:
+666
+201
+102
+999
+777
+
+
+
+Task 4:
+
 
