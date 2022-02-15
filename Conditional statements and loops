@@ -86,3 +86,36 @@ Invalid Marks
 Enter the marks :45
 Valid marks
 Fail
+
+
+
+Task 5:
+#collect three marks from user
+#calculate mark1 + mark2 + mark3 / 3
+
+if calculate > 90 ===> Grade A
+if calculate > 75 ==> Grade B
+calculate > 50  ==> grade C
+Other wise ===> Grade D
+
+m1 = int(input("Enter marks1: "))
+m2 = int(input("Enter marks2: "))
+m3 = int(input("Enter marks3: "))
+
+total = (m1 + m2 + m3)/3
+
+if total > 90:
+    print("Grade A")
+elif total > 75:
+    print("Grade B")
+elif total > 50:
+    print("Grade C")
+else:
+    print("Grade D")
+    
+ 
+Output:
+Enter marks1: 56
+Enter marks2: 75
+Enter marks3: 85
+Grade C
