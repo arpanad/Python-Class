@@ -71,3 +71,18 @@ if(marks>0 and marks<100):
 else:
     print("Invalid Marks")
     
+
+Output:
+Enter the marks :85
+Valid marks
+Pass
+B
+
+
+Enter the marks :110
+Invalid Marks
+
+
+Enter the marks :45
+Valid marks
+Fail
