@@ -33,13 +33,6 @@ print(sum(list1) + min(list1) + max(list1))
 #Find median of the list
 print(list1[int(len(list1)/2)])
 
-
-Output:
-science
-Computer
-
-
-
 #remove duplicates from list and give output in the format of tuple
 print(tuple(set(list1)))
 
