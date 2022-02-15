@@ -1,0 +1,25 @@
+Task 3:
+
+#Fizz buzz
+#Get one number from user
+#Multiple of 3 ==> Fizz
+#Multiple of 5 ===> buzz
+#Multiple of 3 and 5 ===> Fizzbuzz
+#None ==> Invalid number
+
+int1 = int(input("Enter a number: "))
+#3 -> fizz
+#5 -> buzz
+#3&5 -> fizzbuzz
+#none -> Invalid Number
+
+if(int1%3 == 0):
+    print("Fizz")
+elif(int1%5 == 0):
+    print("Buzz")
+else:
+    print("FizzBuzz")
+
+Output:
+Enter a number: 26
+FizzBuzz
