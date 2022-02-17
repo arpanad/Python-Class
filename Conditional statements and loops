@@ -1,3 +1,6 @@
+If-Else Conditional Statements
+------------------------------
+
 Task 1 :
 #Hacker rank
 #Python If-Else
@@ -174,3 +177,29 @@ Enter marks1: 56
 Enter marks2: 75
 Enter marks3: 85
 Grade C
+
+
+For Loops
+------------
+
+Task 1:
+#Using Range function  print multiples of 5 from 0 to 75
+print(list(range(0,75,5)))
+
+#Using Range function  print multiples of 8 from 0 to 72
+print(list(range(0,72,8)))
+
+#Using Range function  print multiples of 5 from 75 to 0
+print(list(range(75,0,-5)))
+
+#Using Range function  print multiples of 8 from 96 to 72
+print(list(range(96,72,-8)))
+
+Output:
+[0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70]
+[0, 8, 16, 24, 32, 40, 48, 56, 64]
+[75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5]
+[96, 88, 80]
+
+
+Task 2:
