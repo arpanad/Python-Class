@@ -225,3 +225,29 @@ Enter the element: 9
 Enter the element: 1
 [5, 2, 3, 4, 6, 7, 9, 1]
 
+
+
+Task 3:
+
+#Get a dynamic dictionary from user
+
+pairs = int(input("Enter the number of key value pairs: "))
+dict1 = {}
+for i in range(pairs):
+    key = input("Enter the key: ")
+    value = input("Enter the value: ")
+    dict1[key] = value
+
+print(dict1)
+
+Output:
+Enter the number of key value pairs: 4
+Enter the key: 2
+Enter the value: python
+Enter the key: 6
+Enter the value: c
+Enter the key: 5
+Enter the value: php
+Enter the key: 1
+Enter the value: selenium
+{'2': 'python', '6': 'c', '5': 'php', '1': 'selenium'}
