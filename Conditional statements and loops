@@ -271,3 +271,19 @@ Enter the ending number: 78
 
 
 Task 5:
+Li1 = [3,4,5,2,7,8,9,10]
+Li_even = list()
+Li_odd = list()
+for ele in Li1:
+    if(ele%2==0):
+        Li_even.append(ele)
+    else:
+        Li_odd.append(ele)
+
+print("Li_even = ", Li_even)
+print("Li_odd = ", Li_odd)
+
+Output:
+Li_even =  [4, 2, 8, 10]
+Li_odd =  [3, 5, 7, 9]
+
