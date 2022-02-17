@@ -66,21 +66,18 @@ Task 3:
 #None ==> Invalid number
 
 int1 = int(input("Enter a number: "))
-#3 -> fizz
-#5 -> buzz
-#3&5 -> fizzbuzz
-#none -> Invalid Number
-
 if(int1%3 == 0):
     print("Fizz")
 elif(int1%5 == 0):
     print("Buzz")
-else:
+elif(int1%3==0 and int1%5==0):
     print("FizzBuzz")
+else:
+    print("Invalid Number")
 
 Output:
-Enter a number: 26
-FizzBuzz
+Enter a number: 50
+Buzz
 
 
 Task 4:
