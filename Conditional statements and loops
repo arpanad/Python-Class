@@ -203,3 +203,25 @@ Output:
 
 
 Task 2:
+#Get a dynamic list from user
+
+num = int(input("Enter the number of elements in the list: "))
+List1 = []
+for i in range(num):
+    element = int(input("Enter the element: "))
+    List1.append(element)
+
+print(List1)
+
+Output:
+Enter the number of elements in the list: 8
+Enter the element: 5
+Enter the element: 2
+Enter the element: 3
+Enter the element: 4
+Enter the element: 6
+Enter the element: 7
+Enter the element: 9
+Enter the element: 1
+[5, 2, 3, 4, 6, 7, 9, 1]
+
