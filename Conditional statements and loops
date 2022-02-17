@@ -228,7 +228,6 @@ Enter the element: 1
 
 
 Task 3:
-
 #Get a dynamic dictionary from user
 
 pairs = int(input("Enter the number of key value pairs: "))
@@ -251,3 +250,26 @@ Enter the value: php
 Enter the key: 1
 Enter the value: selenium
 {'2': 'python', '6': 'c', '5': 'php', '1': 'selenium'}
+
+
+Task 4:
+#Get two integers from user
+#print multiples of 8 between them
+
+int1 = int(input("Enter the start number: "))
+int2 = int(input("Enter the ending number: "))
+
+for i in range(int1,int2):
+    if(i%8==0):
+        print(i)
+
+Output:
+Enter the start number: 10
+Enter the ending number: 45
+16
+24
+32
+40
+
+
+Task 5:
