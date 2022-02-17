@@ -258,18 +258,16 @@ Task 4:
 
 int1 = int(input("Enter the start number: "))
 int2 = int(input("Enter the ending number: "))
-
+List1 = []
 for i in range(int1,int2):
     if(i%8==0):
-        print(i)
+        List1.append(i)
+print(List1)
 
 Output:
 Enter the start number: 10
-Enter the ending number: 45
-16
-24
-32
-40
+Enter the ending number: 78
+[16, 24, 32, 40, 48, 56, 64, 72]
 
 
 Task 5:
