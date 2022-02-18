@@ -84,3 +84,27 @@ Is palindrome
 
 Enter a string to check if its a palindrome: electronics
 Not a palindrome
+
+
+Task 2:
+#whether the number is armstrong or not
+def armstrong(number):
+    leng = len(number)
+    sum1 = 0
+    for i in number:
+        sum1 = sum1 + int(i)**leng
+    
+    if(str(sum1) == number):
+        print("Its an armstrong number")
+    else:
+        print("Its not an armstrong number")
+    
+number = input("Enter a number to check if its an armstrong number: ")
+armstrong(number)
+
+Output:
+Enter a number to check if its an armstrong number: 153
+Its an armstrong number
+
+Enter a number to check if its an armstrong number: 41 01
+Its not an armstrong number
