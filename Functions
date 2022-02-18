@@ -1,6 +1,5 @@
 Task 1:
 #Write function to concatenate three strings
-
 def concatenate(str1, str2, str3):
     return str1 + str2 + str3
   
@@ -13,5 +12,27 @@ print(concatenate(string1, string2, string3))
 Output:
 Enter string 1: design
 Enter string 2: compiler
-Enter string 3: jab va
+Enter string 3: java
 designcompilerjava
+
+
+Task 2:
+#Write a function multiply three different integers and return a int
+def multiply(int1, int2, int3):
+    return int1*int2*int3
+  
+num1 = int(input("Enter num 1: ")) 
+num2 = int(input("Enter num 2: "))
+num3 = int(input("Enter num 3: "))
+
+print(multiply(num1, num2, num3))
+
+Output:
+Enter num 1: 5
+Enter num 2: 7
+Enter num 3: 10
+350
+
+
+Task 3:
+#Write a function to return middle char of the string
