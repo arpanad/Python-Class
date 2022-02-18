@@ -108,3 +108,25 @@ Its an armstrong number
 
 Enter a number to check if its an armstrong number: 401
 Its not an armstrong number
+
+
+Task 3:
+#whether the number is prime or not
+def prime_number(num):
+    if(num == 0 or num ==1):
+        print("Not a prime number")
+    else:
+        for n in range(2,num):
+            if num%n==0:
+                print(num%n)
+                print("Not a Prime Number")
+                break
+        else:
+            print("Prime number")
+        
+number = int(input("Enter a number to check if its a prime number: "))
+prime_number(number)
+
+Output:
+Enter a number to check if its a prime number: 2
+Prime number
