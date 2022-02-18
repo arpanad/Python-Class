@@ -64,3 +64,23 @@ print(char_vowel(string1))
 Output:
 Enter a sitring to find middle char: Audios
 Vowel
+
+
+Advanced:
+---------
+Task 1:
+def palindrome(string1):
+    if(string1 == string1[::-1]):
+        print("Is palindrome")
+    else:
+        print("Not a palindrome")
+
+string1 = input("Enter a string to check if its a palindrome: ")
+palindrome(string1)
+
+Output:
+Enter a string to check if its a palindrome: malayalam
+Is palindrome
+
+Enter a string to check if its a palindrome: electronics
+Not a palindrome
