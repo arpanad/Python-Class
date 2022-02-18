@@ -36,3 +36,13 @@ Enter num 3: 10
 
 Task 3:
 #Write a function to return middle char of the string
+def middle_char(str1):
+    return str1[int(len(str1)/2)]
+    
+string1 = input("Enter a sitring to find middle char: ")
+
+print(middle_char(string1))
+
+Output:
+Enter a sitring to find middle char: mathematics
+m
