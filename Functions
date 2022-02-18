@@ -46,3 +46,21 @@ print(middle_char(string1))
 Output:
 Enter a sitring to find middle char: mathematics
 m
+
+
+Task 4:
+#write a function to return whether middle character is vowel or not
+def char_vowel(str1):
+    vowel = ['a','e','i','o','u','A','E','I','O','U']
+    mid_char = str1[int(len(str1)/2)]
+    if (mid_char in vowel):
+        return 'Vowel'
+    else:
+        return 'Consonent'
+    
+string1 = input("Enter a sitring to find middle char: ")
+print(char_vowel(string1))
+
+Output:
+Enter a sitring to find middle char: Audios
+Vowel
