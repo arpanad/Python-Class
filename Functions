@@ -1,0 +1,17 @@
+Task 1:
+#Write function to concatenate three strings
+
+def concatenate(str1, str2, str3):
+    return str1 + str2 + str3
+  
+string1 = input("Enter string 1: ") 
+string2 = input("Enter string 2: ")
+string3 = input("Enter string 3: ")
+
+print(concatenate(string1, string2, string3))
+
+Output:
+Enter string 1: design
+Enter string 2: compiler
+Enter string 3: jab va
+designcompilerjava
