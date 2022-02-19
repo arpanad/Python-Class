@@ -96,3 +96,13 @@ Sum of 56 and 78 is 134
 
 
 #Program 7:
+#Program to find ASCII value of a char
+char1 = input("Enter a character to find the ASCII value: ")[0]
+print(ord(char1))
+
+Output:
+Enter a character to find the ASCII value: u
+117
+
+
+#Program 8:
