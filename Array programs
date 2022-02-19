@@ -1,0 +1,14 @@
+#Program 1:
+#Program to find sum of all elements in an array
+list1 = [6, 7, 8, 9, 10, 1, 2]
+sum1 = 0
+for i in list1:
+    sum1 = sum1 + i
+
+print("Sum of elements in array is : ", sum1)
+
+Output:
+Sum of elements in array is :  43
+
+
+#Program 2:
