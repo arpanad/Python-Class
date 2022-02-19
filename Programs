@@ -46,3 +46,22 @@ print(area_circle(radius))
 Output:
 Enter the radius of circle: 5.5
 94.985
+
+
+#Program 4
+#Sum of square of n numbers
+def square_sum(num):
+    sum1 = 0
+    for n in range(num+1):
+        sum1 = sum1 + (n**2)
+    return sum1
+
+num = int(input("Enter a number to find the sum of squares of n numbers: "))
+print(square_sum(num))
+
+Output:
+Enter a number to find the sum of squares of n numbers: 4
+30
+
+
+#Program 5:
