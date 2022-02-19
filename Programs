@@ -78,3 +78,7 @@ print(cube_sum(num))
 Output:
 Enter a number to find the sum of squares of n numbers: 5
 225
+
+
+#Program 6
+#Sum of 2 numbers
