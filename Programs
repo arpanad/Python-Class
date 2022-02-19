@@ -82,3 +82,17 @@ Enter a number to find the sum of squares of n numbers: 5
 
 #Program 6
 #Sum of 2 numbers
+num1 = int(input("Enter num 1: "))
+num2 = int(input("Enter num 2: "))
+
+sum1 = num1 + num2
+
+print(f"Sum of {num1} and {num2} is {sum1}")
+
+Output:
+Enter num 1: 56
+Enter num 2: 78
+Sum of 56 and 78 is 134
+
+
+#Program 7:
