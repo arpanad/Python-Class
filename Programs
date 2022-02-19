@@ -65,3 +65,16 @@ Enter a number to find the sum of squares of n numbers: 4
 
 
 #Program 5:
+#Sum of cube of n numbers
+def cube_sum(num):
+    sum1 = 0
+    for n in range(num+1):
+        sum1 = sum1 + (n**3)
+    return sum1
+
+num = int(input("Enter a number to find the sum of squares of n numbers: "))
+print(cube_sum(num))
+
+Output:
+Enter a number to find the sum of squares of n numbers: 5
+225
