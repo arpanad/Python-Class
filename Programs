@@ -1,0 +1,16 @@
+#Program 1
+#Simple Interest Program
+def simple_interest(principle,time,rate):
+    return (principle*time*rate)/100
+
+principle = float(input("Enter the priciple amount: "))
+time = float(input("Enter the units of time: "))
+rate = float(input("Enter the rate of interest: "))
+
+print(simple_interest(principle,time,rate))
+
+Output:
+Enter the priciple amount: 10000
+Enter the units of time: 5
+Enter the rate of interest: 5
+2500.0
