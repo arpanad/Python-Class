@@ -14,3 +14,21 @@ Enter the priciple amount: 10000
 Enter the units of time: 5
 Enter the rate of interest: 5
 2500.0
+
+
+#Program 2:
+#Compound Interest
+def compound_interest(principle,time,rate):
+    return principle*(1 + rate/100)**time
+
+principle = float(input("Enter the priciple amount: "))
+time = float(input("Enter the units of time: "))
+rate = float(input("Enter the rate of interest: "))
+
+print(compound_interest(principle,time,rate))
+
+Output:
+Enter the priciple amount: 1200
+Enter the units of time: 2
+Enter the rate of interest: 5.4
+1333.0992
