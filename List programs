@@ -86,4 +86,32 @@ Enter the element to check the existance: 20
 Element exists
 
 
+Program 5:
+#Program to different ways to clear a list
+
+list1 = input("Enter the elements: ").split()
+list2 = input("Enter the elements: ").split()
+list3 = input("Enter the elements: ").split()
+
+#Using clear method
+list1.clear()
+print(list1)
+
+#Using reinitialising
+list2 = []
+print(list2)
+
+#Using del function
+
+del list3[:]
+print(list3)
+
+
+Output:
+Enter the elements: 4 2 6 7 2 5 1 9
+Enter the elements: 3 4 5 2 6
+Enter the elements: 7 8 9 1 3  7
+[]
+[]
+[]
 
