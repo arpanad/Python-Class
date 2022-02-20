@@ -16,4 +16,33 @@ Enter the elements: 5 6 7 8 4 3 2
 
 
 #Program 2:
+#program to interchange first and last elements in a list
 
+list1 = input("Enter the elements: ").split()
+leng = len(list1)
+bool = True
+while bool==True:
+    pos1 = int(input("Enter the position"))
+    pos2 = int(input("Enter the position"))
+    if(pos1>=leng or pos2>=leng):
+        print(f"Enter a number the pos value less than {leng}")
+    else:
+        bool=False
+
+temp = list1[pos1-1]
+list1[pos1-1] = list1[pos2-1]
+list1[pos2-1] = temp
+
+print(list1)
+
+Output:
+Enter the elements: 3 4 5 6 1 2 7
+Enter the position8
+Enter the position2
+Enter a number the pos value less than 7
+Enter the position6
+Enter the position7
+Enter a number the pos value less than 7
+Enter the position3
+Enter the position4
+['3', '4', '6', '5', '1', '2', '7']
