@@ -226,3 +226,22 @@ print(min_ele)
 Output:
 Enter the elements: 20 32 15 17 18 39 0 -5 87
 -5
+
+
+Program 12:
+#Program to find the second largest number in list
+
+list1 = input("Enter the elements: ").split()
+max_ele1 = list(list1)[0]
+
+for i in range(len(list1)):
+    if(list1[i] == max_ele1):
+        continue
+    elif(list1[i]>max_ele1):
+        max_ele2 = max_ele1
+        max_ele1 = list1[i]
+
+print(max_ele2)
+#max_ele = max(list1)
+
+Output:
