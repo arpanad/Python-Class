@@ -183,3 +183,27 @@ print("Multiplying all elements in list: {}".format(total))
 Output:
 Enter the elements: 25 35 50 21 98 24 78
 Multiplying all elements in list: 168550200000
+
+
+Program 10:
+#Program to find the largest number in list
+#Program to find largest element in list
+
+list1 = input("Enter the elements: ").split()
+max_ele = list(list1)[0]
+
+for i in range(len(list1)):
+    if(list1[i] == max_ele):
+        continue
+    elif(list1[i]>max_ele):
+        max_ele = list1[i]
+
+print(max_ele)
+
+
+Output:
+Enter the elements: 20 30 35 21 63 78 12
+78
+
+
+Program 11:
