@@ -115,3 +115,16 @@ Enter the elements: 7 8 9 1 3  7
 []
 []
 
+
+Program 6:
+#Program to reverse a list
+
+list1 = input("Enter the elements: ").split()
+
+#reversing using reverse method 
+list1.reverse()
+print(list1)
+
+Output:
+Enter the elements: 1 2 3 4 5 2 3 6 7 9
+['9', '7', '6', '3', '2', '5', '4', '3', '2', '1']
