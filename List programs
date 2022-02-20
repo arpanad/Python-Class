@@ -207,3 +207,20 @@ Enter the elements: 20 30 35 21 63 78 12
 
 
 Program 11:
+#Program to find smallest element in list
+
+list1 = input("Enter the elements: ").split()
+min_ele = list(list1)[0]
+
+for i in range(len(list1)):
+    if(list1[i] == min_ele):
+        continue
+    elif(list1[i]<min_ele):
+        min_ele = list1[i]
+
+print(min_ele)
+
+
+Output:
+Enter the elements: 20 32 15 17 18 39 0 -5 87
+-5
