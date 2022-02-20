@@ -128,3 +128,25 @@ print(list1)
 Output:
 Enter the elements: 1 2 3 4 5 2 3 6 7 9
 ['9', '7', '6', '3', '2', '5', '4', '3', '2', '1']
+
+
+Program 7:
+#Program to reverse a list
+
+list1 = input("Enter the elements: ").split()
+list2 = input("Enter the elements: ").split()
+
+#reversing using reverse method 
+list1.reverse()
+print(list1)
+
+#reversing using slicing
+list2 = list2[::-1]
+print(list2)
+
+Output:
+Enter the elements: 1 2 3 4 5 2 3 6  
+Enter the elements: 2 3 4 5 3 4
+['6', '3', '2', '5', '4', '3', '2', '1']
+['4', '3', '5', '4', '3', '2']
+
