@@ -199,6 +199,7 @@ for i in range(len(list1)):
         max_ele = list1[i]
 
 print(max_ele)
+#max_ele = max(list1)
 
 
 Output:
@@ -219,6 +220,7 @@ for i in range(len(list1)):
         min_ele = list1[i]
 
 print(min_ele)
+#min_ele = min(list1)
 
 
 Output:
