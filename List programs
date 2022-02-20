@@ -167,3 +167,19 @@ print("Sum of all elements in list: {}".format(total))
 Output:
 Enter the elements: 1 2 3 4 2 5 6 3
 Sum of all elements in list: 26
+
+
+Program 9:
+#Program to multiply all the elements in list
+
+list1 = input("Enter the elements: ").split()
+total = 1
+for i in range(len(list1)):
+    list1[i] = int(list1[i])
+    total = total*list1[i]
+print("Multiplying all elements in list: {}".format(total))
+
+
+Output:
+Enter the elements: 25 35 50 21 98 24 78
+Multiplying all elements in list: 168550200000
