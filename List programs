@@ -60,3 +60,30 @@ print("Length of list: ", count)
 Output:
 Enter the elements: 5 6 7 8 9 10 11 345
 Length of list:  8
+
+
+Program 4:
+#Program to check if element exists in list
+
+list1 = input("Enter the elements: ").split()
+element = input("Enter the element to check the existance: ")
+
+for i in list1:
+    if(i == element):
+        print("Element exists")
+        break
+else:
+    print("Element does not exist")
+
+
+Output:
+Enter the elements: 3 5 3 2 6 8 1 12 10 16
+Enter the element to check the existance: 4
+Element does not exist
+
+Enter the elements: 10 12 15 16 18 20
+Enter the element to check the existance: 20
+Element exists
+
+
+
