@@ -1,26 +1,19 @@
 #Program 1:
-#Program to find sum of all elements in an array
-list1 = [6, 7, 8, 9, 10, 1, 2]
-sum1 = 0
-for i in list1:
-    sum1 = sum1 + i
+#program to interchange first and last elements in a list
 
-print("Sum of elements in array is : ", sum1)
+list1 = input("Enter the elements: ").split()
+l = len(list1)
+
+temp = list1[0]
+list1[0] = list1[l-1]
+list1[l-1] = temp
+
+print(list1)
 
 Output:
-Sum of elements in array is :  43
+Enter the elements: 5 6 7 8 4 3 2
+['2', '6', '7', '8', '4', '3', '5']
 
 
 #Program 2:
-#Program to find sum of all elements in an array
-list1 = [6, 7, 8, 9, 10, 1, 2]
-max1 = list1[0]
-for i in list1:
-    if(i > max1):
-        max1 = i
-
-print("Largest element in an array is : ", max1)
-
-Output:
-Largest element in an array is :  10
 
