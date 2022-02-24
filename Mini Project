@@ -1,0 +1,97 @@
+import random
+
+games = int(input("Enter the number of games: "))
+
+choices = ["rock", "paper", "scissor"]
+
+user_score = 0
+system_score = 0
+tie_count = 0
+    
+for round1 in range(games):
+    print(f"Game {round1 + 1}")
+    flag = 1
+    while flag:
+        user_choice = input("Enter your choice: ")
+        if(user_choice in choices):
+            flag = 0
+            break
+        else:
+            print("Enter a valid choice: ")
+
+    system_choice = random.choice(choices)
+    print(f"System's choice : {system_choice}")
+
+
+    if(user_choice == system_choice):
+        print("Tie")
+        tie_count = tie_count + 1
+    elif(user_choice == "rock" and system_choice == "paper"):
+        print("System Won")
+        system_score = system_score + 1
+    elif(user_choice == "rock" and system_choice == "scissor"):
+        print("User Won")
+        user_score = user_score + 1
+    elif(user_choice == "paper" and system_choice == "rock"):
+        print("User Won")
+        user_score = user_score + 1
+    elif(user_choice == "paper" and system_choice == "scissor"):
+        print("System Won")
+        system_score = system_score + 1
+    elif(user_choice == "scissor" and system_choice == "rock"):
+        print("System Won")
+        system_score = system_score + 1
+    elif(user_choice == "scissor" and system_choice == "paper"):
+        print("User Won")
+        user_score = user_score + 1
+
+print(f"Total number of games : {games}")
+print(f"System points : {system_score}")
+print(f"User Points : {user_score}")
+print(f"Number of tie games : {tie_count}")
+
+if(user_score > system_score):
+    print("USER wins the game !!! Congrats !!!!")
+elif(system_score > user_score):
+    print("System wins the game!! Better luck next time")
+else:
+    print("Tie game")
+
+
+Output:
+Enter the number of games: 7
+Game 1
+Enter your choice: rok
+Enter a valid choice: 
+Enter your choice: rock
+System's choice : paper
+System Won
+Game 2
+Enter your choice: rock
+System's choice : scissor
+User Won
+Game 3
+Enter your choice: rock
+System's choice : paper
+System Won
+Game 4
+Enter your choice: rock
+System's choice : paper
+System Won
+Game 5
+Enter your choice: rok ck
+System's choice : scissor
+User Won
+Game 6
+Enter your choice: rock
+System's choice : scissor
+User Won
+Game 7
+Enter your choice: rock
+System's choice : scissor
+User Won
+Total number of games : 7
+System points : 3
+User Points : 4
+Number of tie games : 0
+USER wins the game !!! Congrats !!!!
