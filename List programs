@@ -367,3 +367,40 @@ Output:
 -8
 -5
 -3
+
+
+Program 20:
+#Program to print all positive numbers in a range
+start = int(input("Enter the starting number of range: "))
+end = int(input("Enter the ending number of range: "))
+
+for num in range(start, end):
+    if(num > 0):
+        print(num)
+        
+Output:
+Enter the starting number of range: -5
+Enter the ending number of range: 5
+1
+2
+3
+4
+
+
+Program 21:
+#Program to print all negative numbers in a range
+start = int(input("Enter the starting number of range: "))
+end = int(input("Enter the ending number of range: "))
+
+for num in range(start, end):
+    if(num < 0):
+        print(num)
+
+Output:
+Enter the starting number of range: -5
+Enter the ending number of range: 5
+-5
+-4
+-3
+-2
+-1
