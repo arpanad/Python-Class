@@ -457,3 +457,18 @@ Output:
 [2, 3, 4, 5, 6, 3, 5, 4, 2, 5, 2, 3]
 Enter the element to check the count: 3
 3
+
+
+Program 25:
+#Program to find the sum of number digits in List
+list1 = list(input().split())
+for x in range(len(list1)):
+    sum1 = 0
+    for digit in list1[x]:
+        sum1 = sum1 + int(digit)
+    list1[x] = sum1
+print(list1)
+
+Output:
+23 34 56
+[5, 7, 11]
