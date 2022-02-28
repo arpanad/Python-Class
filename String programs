@@ -19,5 +19,16 @@ words = string1.split()
 print(' '.join(reversed(words)))
 
 Output:
-geeks programs for pt ractice
+geeks programs for practice
 practice for programs geeks
+
+
+Program 3:
+#Program to remove a character from a string
+string1 = "Geeks For Geeks"
+print(string1)
+print(string1.replace('F', ''))
+
+Output:
+Geeks For Geeks
+Geeks or Geeks
