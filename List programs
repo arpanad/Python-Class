@@ -296,3 +296,42 @@ Output:
 81 52 45 10 3 2 96
 Number of largest numbers: 3
 [96, 81, 52]
+
+
+Program 16:
+#Program to print all even numbers in a range
+start = int(input("Enter the starting number of range: "))
+end = int(input("Enter the ending number of range: "))
+
+for num in range(start, end):
+    if(num%2 == 0):
+        print(num)
+        
+Output:
+Enter the starting number of range: 5
+Enter the ending number of range: 15
+6
+8
+10
+12
+14
+
+
+Program 17:
+#Program to print all odd numbers in a range
+start = int(input("Enter the starting number of range: "))
+end = int(input("Enter the ending number of range: "))
+
+for num in range(start, end):
+    if(num%2 != 0):
+        print(num)
+      
+Output:
+Enter the starting number of range: 12
+Enter the ending number of range: 25
+13
+15
+17
+19
+21
+23
