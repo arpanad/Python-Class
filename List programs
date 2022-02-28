@@ -437,3 +437,23 @@ print(li1_updated)
 
 Output:
 [2, 5, 7, 9, 11]
+
+
+Program 24:
+#Program to count occurrences of an element in a list
+li1 = [2, 3, 4, 5, 6, 3, 5, 4, 2, 5, 2, 3]
+print(li1)
+num1 = int(input("Enter the element to check the count: "))
+
+count = 0
+
+for x in li1:
+    if x == num1:
+        count = count + 1
+
+print(count)
+
+Output:
+[2, 3, 4, 5, 6, 3, 5, 4, 2, 5, 2, 3]
+Enter the element to check the count: 3
+3
