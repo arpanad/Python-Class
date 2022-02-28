@@ -335,3 +335,35 @@ Enter the ending number of range: 25
 19
 21
 23
+
+
+Program 18:
+#Program to print all positive numbers in a list
+#Program to print even numbers in a list
+list1 = list(map(int, input().split()))
+
+for x in list1:
+    if(x > 0):
+        print(x)
+
+Output:
+-100 600 -5 -8 -45 28 67 34
+600
+28
+67
+34
+
+
+Program 19:
+#Program to print all negative numbers in a list
+list1 = list(map(int, input().split()))
+
+for x in list1:
+    if(x < 0):
+        print(x)
+
+Output:
+-8 2 8 -5 -3
+-8
+-5
+-3
