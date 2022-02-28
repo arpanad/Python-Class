@@ -10,3 +10,14 @@ else:
 Output:
 Enter the string: malayalam
 Palindrome
+
+
+Program 2:
+#Program to reverse the words in the string
+string1 = input()
+words = string1.split()
+print(' '.join(reversed(words)))
+
+Output:
+geeks programs for pt ractice
+practice for programs geeks
