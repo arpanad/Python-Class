@@ -231,8 +231,8 @@ Enter the elements: 20 32 15 17 18 39 0 -5 87
 Program 12:
 #Program to find the second largest number in list
 
-list1 = input("Enter the elements: ").split()
-max_ele1 = list(list1)[0]
+list1 = list(map(int, input("Enter the elements: ").split()))
+max_ele1 = max_ele2 = list(list1)[0]
 
 for i in range(len(list1)):
     if(list1[i] == max_ele1):
@@ -242,6 +242,22 @@ for i in range(len(list1)):
         max_ele1 = list1[i]
 
 print(max_ele2)
-#max_ele = max(list1)
 
 Output:
+Enter the elements: 2 4 1 6 3 8 9
+8
+
+Program 13:
+#Program to print even numbers in a list
+arr1 = list(map(int, input().split()))
+
+for x in arr1:
+    if(x%2 == 0):
+        print(x)
+        
+Output:
+23 24 21 56 54 32
+24
+56
+54
+32
