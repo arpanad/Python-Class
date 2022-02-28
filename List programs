@@ -404,3 +404,19 @@ Enter the ending number of range: 5
 -3
 -2
 -1
+
+
+Program 22:
+#Program to copy a list
+li1 = [2, 3, 4, 5, 6]
+li1_copy = []
+
+for x in li1:
+    li1_copy.append(x)
+
+#li1_copy = li1[:]
+#li1_copy.extend(li1)
+print(li1_copy)
+
+Output:
+[2, 3, 4, 5, 6]
