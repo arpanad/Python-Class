@@ -261,3 +261,19 @@ Output:
 56
 54
 32
+
+
+Program 14:
+#Program to print odd numbers in a list
+arr1 = list(map(int, input().split()))
+
+for x in arr1:
+    if(x%2 != 0):
+        print(x)
+        
+Output:
+2 5 9 11 12 14 26 29
+5
+9
+11
+29
