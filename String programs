@@ -1,0 +1,12 @@
+Program 1:
+#Program to check if given string is palindrome
+string1 = input("Enter the string: ")
+
+if(string1 == string1[::-1]):
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+   
+Output:
+Enter the string: malayalam
+Palindrome
