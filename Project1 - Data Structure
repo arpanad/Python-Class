@@ -99,26 +99,37 @@ def pair_add_dictnary(temp_dict):
     return temp_dict
 
 def replace_values_dict(temp_dict):
-    while key not in temp_dict:
+    while True:
         key = int(input("Enter the key whose value is to be replaced : "))
         value = input("Enter the updated value : ")
         if(key in temp_dict):
             temp_dict[key] = value
-    return temp_dict
+            break
+        else:
+            print("The key entered is not present")
+        return temp_dict
     
 def remove_pair_dictnary(temp_dict):
-    while key not in temp_dict:
+    while True:
         key = int(input("Enter the key which is to be removed : "))
         if(key in temp_dict):
             temp_dict.pop(key)
+            break
+        else:
+            print("The key entered is not present")
     return temp_dict
     
 def update_dictnary(temp_dict1):
     print("Creating another dictionary to update")
     temp_dict2 = create_dictnary()
-    return temp_dict1.update(temp_dict2)
+    temp_dict1.update(temp_dict2)
+    return temp_dict1
     
-   
+def form_dictnary():
+    list1 = create_list()
+    list2 = create_list()
+    new_dict = dict(zip(list1,list2))
+    return new_dict
         
         
 print("Data Structures")
@@ -329,7 +340,10 @@ while True:
         dictnary = create_dictnary()
         
         while True:
-            dictnary_operatn = int(input("\n1.Add \n2.Replace \n3.Removal \n4.Update \n5.Keys \n6.Values \n7.Items \n8.Pop \n9.Form dictionary using 2 lists \n10.Exit"))
+            print("\n1.Add \n2.Replace \n3.Removal \n4.Update \n5.Keys \n6.Values \n7.Items \n8.Pop \n9.Form dictionary using 2 lists \n10.Exit")
+            
+            dictnary_operatn = int(input("Select the dictionary operation : "))
+            
             if(dictnary_operatn==1):
                 print("You have selected the add operation")
                 dictnary = pair_add_dictnary(dictnary)
