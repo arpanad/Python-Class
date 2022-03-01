@@ -126,6 +126,7 @@ while True:
             elif(list_operatn==16):
                 print("You have opted to exit the List data structure\n")
                 break
+            
             else:
                 print("Invalid Input\n")
                 
@@ -139,7 +140,7 @@ while True:
             
             if(tuple_operatn == 1):
                 print("You have selected the Median operation")
-                print("Median of tuple : ", tup1[int(len(tupl1)/2)])
+                print("Median of tuple : ", tup1[int(len(tup1)/2)])
                 
             elif(tuple_operatn == 2):
                 print("You have selected the Min operation")
@@ -169,6 +170,7 @@ while True:
                 print("Invalid Input\n")
         
     elif(data_struct_optn == 5):
+        print("You have opted to exit the data structures")
         break
     
     else:
