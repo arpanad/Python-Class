@@ -164,7 +164,7 @@ while True:
             elif(list_operatn==15):
                 print("You have selected the Reverse operation")
                 list1_reverse = list1[::-1]
-                print("The copied list is : ", list1_reverse)
+                print("The reverse of list is : ", list1_reverse)
                 
             elif(list_operatn==16):
                 print("You have opted to exit the List data structure\n")
@@ -219,7 +219,7 @@ while True:
         
         while True:
             print("\n1.Add \n2.Update \n3.Remove/discard \n4.Pop \n5.Copy \n6.Sum \n7.Min \n8.Max \n9.Length \n10.Intersection \n11.Difference \n12.Union \n13.Exit")
-            print("Select a set Operation : ")
+            set_operatn = int(input("Select a set Operation : "))
         
             if(set_operatn==1):
                 print("You have selected the Add Operation")
@@ -257,7 +257,7 @@ while True:
                 
             elif(set_operatn==8):
                 print("You have selected the Max Operation")
-                print("Largest element in set : ", min(set1))
+                print("Largest element in set : ", max(set1))
                 
             elif(set_operatn==9):
                 print("You have selected the Length Operation")
@@ -276,7 +276,7 @@ while True:
             elif(set_operatn==12):
                 print("You have selected the Union Operation")
                 set_uni = set_union(set1)
-                print("The difference of the sets : ", set_uni)
+                print("The union of the sets : ", set_uni)
                 
             elif(set_operatn==13):
                 print("You have opted to exit the Set Data Structures")
@@ -291,3 +291,6 @@ while True:
     
     else:
         print("Invalid Input\n")
+
+
+    
