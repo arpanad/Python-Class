@@ -107,7 +107,7 @@ def replace_values_dict(temp_dict):
             break
         else:
             print("The key entered is not present")
-        return temp_dict
+    return temp_dict
     
 def remove_pair_dictnary(temp_dict):
     while True:
@@ -366,7 +366,7 @@ while True:
                 
             elif(dictnary_operatn==5):
                 print("You have selected the keys operation")
-                print("Keys of the dictionary : ", dictnary.key())
+                print("Keys of the dictionary : ", dictnary.keys())
                 
             elif(dictnary_operatn==6):
                 print("You have selected the values operation")
