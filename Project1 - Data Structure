@@ -82,7 +82,36 @@ def set_union(temp_set1):
     result = temp_set1.union(temp_set2)
     return result
     
+def create_dictnary():
+    temp_dict = dict()
+    print("Creating a dictionary")
+    pairs = int(input("Enter the number of pairs : "))
+    for pair in range(pairs):
+        key = int(input("Enter the key : "))
+        value = input("Enter the value : ")
+        temp_dict[key] = value 
+    return temp_dict
+        
+def pair_add_dictnary(temp_dict):
+    key = int(input("Enter the key : "))
+    value = input("Enter the value : ")
+    temp_dict[key] = value
+    return temp_dict
+
+def replace_values_dict(temp_dict):
+    while key not in temp_dict:
+        key = int(input("Enter the key whose value is to be replaced : "))
+        value = input("Enter the updated value : ")
+        temp_dict[key] = value
+    return temp_dict
     
+def remove_pair_dictnary(temp_dict):
+    while key not in temp_dict:
+        key = int(input("Enter the key which is to be removed : "))
+        temp_dict.pop(key)
+    return temp_dict
+        
+        
 print("Data Structures")
 
 while True:
@@ -173,7 +202,7 @@ while True:
             else:
                 print("Invalid Input\n")
                 
-    if(data_struct_optn == 2):
+    elif(data_struct_optn == 2):
         print("Data Structure : Tuple")
         tup1 = tuple(create_list("tuple"))
         
@@ -280,6 +309,50 @@ while True:
                 
             elif(set_operatn==13):
                 print("You have opted to exit the Set Data Structures")
+                break
+                
+            else:
+                print("Invalid Input")
+                
+        
+    elif(data_struct_optn == 4):
+        print("Data structure : Dictionary")
+        dictnary = create_dictnary()
+        
+        while True:
+            dictnary_operatn = int(input("\n1.Add \n2.Replace \n3.Removal \n4.Update \n5.Keys \n6.Values \n7.Items \n8.Pop \n9.Exit"))
+            if(dictnary_operatn==1):
+                print("You have selected the add operation")
+                dictnary = pair_add_dictnary(dictnary)
+                print("Dictionary after the add operation : ", dictnary)
+            
+            elif(dictnary_operatn==2):
+                print("You have selected the replace operation")
+                dictnary = replace_values_dict(dictnary)
+                print("Dictionary after the replace operation : ", dictnary)
+                
+            elif(dictnary_operatn==3):
+                print("You have selected the removal operation")
+                dictnary = remove_pair_dictnary(dictnary)
+                print("Dictionary after the remove operation : ", dictnary)
+                
+            elif(dictnary_operatn==4):
+                print("You have selected the update operation")
+                
+            elif(dictnary_operatn==5):
+                print("You have selected the keys operation")
+                
+            elif(dictnary_operatn==6):
+                print("You have selected the values operation")
+                
+            elif(dictnary_operatn==7):
+                print("You have selected the items operation")
+                
+            elif(dictnary_operatn==8):
+                print("You have selected the pop operation")
+                
+            elif(dictnary_operatn==9):
+                print("You have opted to exit the Dictionary Data Structures")
                 break
                 
             else:
