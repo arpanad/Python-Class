@@ -130,3 +130,23 @@ prime_number(number)
 Output:
 Enter a number to check if its a prime number: 2
 Prime number
+
+
+Task 4:
+#Find factorial of a number using function
+def factorial(num1):
+    fact_num1 = 1
+    for n in range(1, num1+1):
+        fact_num1 = fact_num1 * n
+    return fact_num1
+    
+num = int(input("Enter a number to find factorial : "))
+fact_num = factorial(num)
+print(f"Factorial of {num} is {fact_num}")
+
+Output:
+Enter a number to find factorial : 6
+Factorial of 6 is 720
+
+
+        
