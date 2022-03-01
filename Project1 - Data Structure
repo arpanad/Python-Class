@@ -102,14 +102,23 @@ def replace_values_dict(temp_dict):
     while key not in temp_dict:
         key = int(input("Enter the key whose value is to be replaced : "))
         value = input("Enter the updated value : ")
-        temp_dict[key] = value
+        if(key in temp_dict):
+            temp_dict[key] = value
     return temp_dict
     
 def remove_pair_dictnary(temp_dict):
     while key not in temp_dict:
         key = int(input("Enter the key which is to be removed : "))
-        temp_dict.pop(key)
+        if(key in temp_dict):
+            temp_dict.pop(key)
     return temp_dict
+    
+def update_dictnary(temp_dict1):
+    print("Creating another dictionary to update")
+    temp_dict2 = create_dictnary()
+    return temp_dict1.update(temp_dict2)
+    
+   
         
         
 print("Data Structures")
@@ -320,7 +329,7 @@ while True:
         dictnary = create_dictnary()
         
         while True:
-            dictnary_operatn = int(input("\n1.Add \n2.Replace \n3.Removal \n4.Update \n5.Keys \n6.Values \n7.Items \n8.Pop \n9.Exit"))
+            dictnary_operatn = int(input("\n1.Add \n2.Replace \n3.Removal \n4.Update \n5.Keys \n6.Values \n7.Items \n8.Pop \n9.Form dictionary using 2 lists \n10.Exit"))
             if(dictnary_operatn==1):
                 print("You have selected the add operation")
                 dictnary = pair_add_dictnary(dictnary)
@@ -338,20 +347,32 @@ while True:
                 
             elif(dictnary_operatn==4):
                 print("You have selected the update operation")
+                dictnary = update_dictnary(dictnary)
+                print("Dictionary after the update operation : ", dictnary)
                 
             elif(dictnary_operatn==5):
                 print("You have selected the keys operation")
+                print("Keys of the dictionary : ", dictnary.key())
                 
             elif(dictnary_operatn==6):
                 print("You have selected the values operation")
+                print("Values of the dictionary : ", dictnary.values())
                 
             elif(dictnary_operatn==7):
                 print("You have selected the items operation")
+                print("Items of the dictionary : ", dictnary.items())
                 
             elif(dictnary_operatn==8):
                 print("You have selected the pop operation")
+                dictnary.popitem()
+                print("Dictionary after a random pair is removed : ", dictnary)
                 
             elif(dictnary_operatn==9):
+                print("You have selected to form a dictionary using 2 lists")
+                new_dictnary = form_dictnary()
+                print("The created dictionary using lists : ", new_dictnary)
+                
+            elif(dictnary_operatn==10):
                 print("You have opted to exit the Dictionary Data Structures")
                 break
                 
