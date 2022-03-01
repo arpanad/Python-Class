@@ -149,6 +149,23 @@ Enter a number to find factorial : 6
 Factorial of 6 is 720
 
 
+Task 5:
+#Find factorial of a number using recursive function
+def factorial(num1):
+    if num1 == 1:
+        return 1 
+    else:
+        return num1 * factorial(num1 - 1)
+    
+num = int(input("Enter a number to find factorial : "))
+fact_num = factorial(num)
+print(f"Factorial of {num} is {fact_num}")
+
+Output:
+Enter a number to find factorial : 8
+Factorial of 8 is 40320
+
+
 Task 6:
 #Find factorial of a number without using function
 num = int(input("Enter a number to find factorial : "))
