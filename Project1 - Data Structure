@@ -38,7 +38,15 @@ def ele_search(data_structure):
 def ele_count(data_structure):
     element = int(input("Enter a element to find the frequency : "))
     print("The frequency of the number is : ", data_structure.count(element))
-    
+
+def create_set():
+    temp_set = set()
+    print(f"Creating a Set")
+    ele_count = int(input(f"Enter the number of elements in Set : "))
+    for ele_index in range(ele_count):
+        element = int(input(f"Enter element {ele_index + 1} : "))
+        temp_set.add(element)
+    return temp_set    
     
 print("Data Structures")
 
@@ -53,7 +61,7 @@ while True:
         while True:
             print("\n1.Append \n2.Pop \n3.Update \n4.Concatenation \n5.Sum \n6.Min \n7.Max \n8.Length \n9.Mean \n10.Median \n11.Find/Index \n12.Count \n13.Remove \n14.Copy \n15.Reverse \n16.Exit")    
             
-            list_operatn = int(input("\nSelect a list operation : \n"))
+            list_operatn = int(input("\nSelect a list operation : "))
         
             if(list_operatn==1):
                 print("You have selected the Append operation")
@@ -168,6 +176,15 @@ while True:
             
             else:
                 print("Invalid Input\n")
+    
+    elif(data_struct_optn == 3):
+        print("Data Strucrure : Set")
+        set1 = create_set()
+        print("The created set is : ", set1)
+        
+        while True:
+            print("\n1.Add \n2.Update \n3.Remove/discard \n4.Pop \n5.")
+        
         
     elif(data_struct_optn == 5):
         print("You have opted to exit the data structures")
@@ -175,3 +192,6 @@ while True:
     
     else:
         print("Invalid Input\n")
+
+
+    
