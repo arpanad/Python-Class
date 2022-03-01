@@ -1,0 +1,175 @@
+def create_list(data_structure):
+    temp_list = list()
+    print(f"Creating a {data_structure}")
+    ele_count = int(input(f"Enter the number of elements in {data_structure} : "))
+    for ele_index in range(ele_count):
+        element = int(input(f"Enter element {ele_index + 1} : "))
+        temp_list.append(element)
+    return temp_list
+
+def list_append_ele(temp_list):
+    ele = int(input("Enter the element to append : "))
+    temp_list.append(ele)
+    return temp_list
+    
+def list_pop_ele(temp_list):
+    ele_index = int(input("Enter the element to pop from the list : "))
+    temp_list.pop(ele_index)
+    return temp_list
+
+def list_update(temp_list):
+    ele_pos = int(input("Enter the position of list to update : "))
+    ele_value = int(input("Enter the updated value : "))
+    temp_list[ele_pos] = ele_value
+    return temp_list
+    
+def list_concatenate(temp_list):
+    ele_count = int(input("Enter the number of elements to contactenate : "))
+    con_list = list()
+    for count in range(ele_count):
+        element = int(input("Enter the element : "))
+        con_list.append(element)
+    return temp_list + con_list
+
+def ele_search(data_structure):
+    element = int(input("Enter a element to search : "))
+    print("The index of the searched element : ", data_structure.index(element))
+    
+def ele_count(data_structure):
+    element = int(input("Enter a element to find the frequency : "))
+    print("The frequency of the number is : ", data_structure.count(element))
+    
+    
+print("Data Structures")
+
+while True:
+    data_struct_optn = int(input("Select a Data Structure: 1.List 2.Tuple 3.Set 4.Dictionary 5.Exit : "))
+    
+    if(data_struct_optn == 1):
+        print("Data Structure : List")
+        list1 = create_list("list")
+        print("The created list: ", list1)
+        
+        while True:
+            print("\n1.Append \n2.Pop \n3.Update \n4.Concatenation \n5.Sum \n6.Min \n7.Max \n8.Length \n9.Mean \n10.Median \n11.Find/Index \n12.Count \n13.Remove \n14.Copy \n15.Reverse \n16.Exit")    
+            
+            list_operatn = int(input("\nSelect a list operation : \n"))
+        
+            if(list_operatn==1):
+                print("You have selected the Append operation")
+                list1 = list_append_ele(list1)
+                print("The list after append operation : ", list1)
+            
+            elif(list_operatn==2):
+                print("You have selected the Pop operation")
+                list1 = list_pop_ele(list1)
+                print("The list after pop operation : ", list1)
+                
+            elif(list_operatn==3):
+                print("You have selected the Update operation")
+                list1 = list_update(list1)
+                print("The list after update operation : ", list1)
+                
+            elif(list_operatn==4):
+                print("You have selected the Concatenate operation")
+                list1 = list_concatenate(list1)
+                print("The list after concatenate operation : ", list1)
+                
+            elif(list_operatn==5):
+                print("You have selected the Sum operation")
+                print("Sum of elements in list : ", sum(list1))
+            
+            elif(list_operatn==6):
+                print("You have selected the Min operation")
+                print("Smallest number in list : ", min(list1))
+                
+            elif(list_operatn==7):
+                print("You have selected the Max operation")
+                print("Largest number in list : ", max(list1))
+                
+            elif(list_operatn==8):
+                print("You have selected the Length operation")
+                print("Length of list : ", len(list1))
+                
+            elif(list_operatn==9):
+                print("You have selected the Mean operation")
+                print("Mean of elements in list : ", sum(list1)/len(list1))
+            
+            elif(list_operatn==10):
+                print("You have selected the Median operation")
+                print("Median of elements in list : ", list1[int(len(list1)/2)])
+            
+            elif(list_operatn==11):
+                print("You have selected the Find operation")
+                ele_search(list1)
+                
+            elif(list_operatn==12):
+                print("You have selected the Count operation")
+                ele_count(list1)
+                
+            elif(list_operatn==13):
+                print("You have selected the Remove operation")
+                num3 = int(input("Enter a element to remove : "))
+                list1.remove(num3)
+                print("The list after removing the element is : ", list1)
+                
+            elif(list_operatn==14):
+                print("You have selected the Copy operation")
+                list1_copy = list1[:]
+                print("The copied list is : ", list1_copy)
+                
+            elif(list_operatn==15):
+                print("You have selected the Reverse operation")
+                list1_reverse = list1[::-1]
+                print("The copied list is : ", list1_reverse)
+                
+            elif(list_operatn==16):
+                print("You have opted to exit the List data structure\n")
+                break
+            else:
+                print("Invalid Input\n")
+                
+    if(data_struct_optn == 2):
+        print("Data Structure : Tuple")
+        tup1 = tuple(create_list("tuple"))
+        
+        while True:
+            print("\n1.Median \n2.Min \n3.Max \n4.Count \n5.Find/Index \n6.Sum \n7.Exit")
+            tuple_operatn = int(input("Select a tuple operation : "))
+            
+            if(tuple_operatn == 1):
+                print("You have selected the Median operation")
+                print("Median of tuple : ", tup1[int(len(tupl1)/2)])
+                
+            elif(tuple_operatn == 2):
+                print("You have selected the Min operation")
+                print("Smallest element of tuple : ", min(tup1))
+                
+            elif(tuple_operatn == 3):
+                print("You have selected the Max operation")
+                print("Largest element of tuple : ", max(tup1))
+                
+            elif(tuple_operatn == 4):
+                print("You have selected the Count operation")
+                ele_count(tup1)
+                
+            elif(tuple_operatn == 5):
+                print("You have selected the Find/Index operation")
+                ele_search(tup1)
+        
+            elif(tuple_operatn == 6):
+                print("You have selected the Sum operation")
+                print("Sum of elements : ", sum(tup1))
+                
+            elif(tuple_operatn == 7):
+                print("You have opted to exit the Tuple data structure\n")
+                break
+            
+            else:
+                print("Invalid Input\n")
+        
+    elif(data_struct_optn == 5):
+        break
+    
+    else:
+        print("Invalid Input\n")
