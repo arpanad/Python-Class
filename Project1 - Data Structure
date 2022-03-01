@@ -46,7 +46,18 @@ def create_set():
     for ele_index in range(ele_count):
         element = int(input(f"Enter element {ele_index + 1} : "))
         temp_set.add(element)
-    return temp_set    
+    return temp_set 
+    
+def set_add(temp_set):
+    element = int(input("Enter the element to add in set : "))
+    temp_set.add(element)
+    return temp_set
+    
+def set_update(temp_set1):
+    print("Create another set to update the set")
+    set2 = create_set()
+    temp_set1.update(set2)
+    return temp_set1
     
 print("Data Structures")
 
@@ -183,8 +194,49 @@ while True:
         print("The created set is : ", set1)
         
         while True:
-            print("\n1.Add \n2.Update \n3.Remove/discard \n4.Pop \n5.")
+            print("\n1.Add \n2.Update \n3.Remove/discard \n4.Pop \n5.Copy \n6.Sum \n7.Min \n8.Max \n9.Length \n10.Intersection \n11.Difference \n12.Union \n13.Exit")
+            print("Select a set Operation : ")
         
+            if(set_operatn==1):
+                print("You have selected the Add Operation")
+                set1 = set_add(set1)
+                print("Set after Add operation : ", set1)
+                
+            elif(set_operatn==2):
+                print("You have selected the Add Operation")
+                set1 = set_update(set1)
+                print("Set after Update operation : ", set1)
+                
+            elif(set_operatn==3):
+                print("You have selected the Discard Operation")
+                set1 = set_discard(set1)
+                print("Set after Discard operation : ", set1)
+                
+            elif(set_operatn==4):
+                
+                
+            elif(set_operatn==5):
+                
+            elif(set_operatn==6):
+                
+            elif(set_operatn==7):
+                
+            elif(set_operatn==8):
+                
+            elif(set_operatn==9):
+                
+            elif(set_operatn==10):
+                
+            elif(set_operatn==11):
+                
+            elif(set_operatn==12):
+                
+            elif(set_operatn==13):
+                print("You have opted to exit the Set Data Structures")
+                break
+                
+            else:
+                print("Invalid Input")
         
     elif(data_struct_optn == 5):
         print("You have opted to exit the data structures")
@@ -192,6 +244,3 @@ while True:
     
     else:
         print("Invalid Input\n")
-
-
-    
