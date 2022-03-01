@@ -59,6 +59,30 @@ def set_update(temp_set1):
     temp_set1.update(set2)
     return temp_set1
     
+def set_discard(temp_set):
+    element = int(input("Enter the element to discard : "))
+    temp_set.discard(element)
+    return temp_set
+    
+def set_intersection(temp_set1):
+    print("Create another set to find the intersection")
+    temp_set2 = create_set()
+    result = temp_set1.intersection(temp_set2)
+    return result
+    
+def set_difference(temp_set1):
+    print("Create another set to find the difference")
+    temp_set2 = create_set()
+    result = temp_set1.difference(temp_set2)
+    return result
+    
+def set_union(temp_set1):
+    print("Create another set to find the union")
+    temp_set2 = create_set()
+    result = temp_set1.union(temp_set2)
+    return result
+    
+    
 print("Data Structures")
 
 while True:
@@ -213,23 +237,46 @@ while True:
                 print("Set after Discard operation : ", set1)
                 
             elif(set_operatn==4):
-                
+                print("You have selected the Pop Operation")
+                set1.pop()
+                print("Set after Pop operation : ", set1)
                 
             elif(set_operatn==5):
+                print("You have selected the Copy Operation")
+                set1_copy = set1.copy()
+                print("The copied set : ", set1_copy)
+                
                 
             elif(set_operatn==6):
+                print("You have selected the Sum Operation")
+                print("Sum of elements in set : ", sum(set1))
                 
             elif(set_operatn==7):
+                print("You have selected the Min Operation")
+                print("Smallest element in set : ", min(set1))
                 
             elif(set_operatn==8):
+                print("You have selected the Max Operation")
+                print("Largest element in set : ", min(set1))
                 
             elif(set_operatn==9):
+                print("You have selected the Length Operation")
+                print("Length of set : ", len(set1))
                 
             elif(set_operatn==10):
+                print("You have selected the Intersection Operation")
+                set_intersectn = set_intersection(set1)
+                print("The intersection of the sets : ", set_intersectn)
                 
             elif(set_operatn==11):
+                print("You have selected the Differene Operation")
+                set_diff = set_difference(set1)
+                print("The difference of the sets : ", set_diff)
                 
             elif(set_operatn==12):
+                print("You have selected the Union Operation")
+                set_uni = set_union(set1)
+                print("The difference of the sets : ", set_uni)
                 
             elif(set_operatn==13):
                 print("You have opted to exit the Set Data Structures")
