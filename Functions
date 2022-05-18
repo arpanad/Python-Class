@@ -195,3 +195,32 @@ print(fib_list)
 Output:
 Enter the number of elements of the series : 10
 [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+
+Task 8:
+#Write fibonacci series using recursive function
+def fib(num):
+    if num <=1:
+        return num
+    else:
+        return fib(num-1) + fib(num-2)
+    
+
+elements = int(input("Enter the number of elements of the series : "))
+
+for ele in range(elements):
+    print(fib(ele))
+
+
+Enter the number of elements of the series : 10
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+
