@@ -94,14 +94,14 @@ str2 = input("Enter the 2nd string : ")
 str1_char_asci = ord(str1[int(len(str1)/2)])
 str2_char_asci = ord(str2[int(len(str2)/2)])
 
-asci_total = str1_char_asci + str1_char_asci
+asci_total = str1_char_asci + str2_char_asci
 
 print("The addition of asci value of middle char of both the strings is: ", asci_total)
 
 Output:
 Enter the 1st string : interpreter
 Enter the 2nd string : compiler
-The addition of asci value of middle char of both the strings is:  224
+The addition of asci value of middle char of both the strings is:  220
 
 
 Program 6:
